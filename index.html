@@ -18,7 +18,7 @@
       type="image/x-icon"
       href="./assets/images/poker-transparent.png"
     />
-    <meta name="apple-mobile-web-app-capable" content="yes" >
+    <meta name="apple-mobile-web-app-capable" content="yes" />
   </head>
 
   <body>
@@ -28,7 +28,7 @@
         loop
         controls="false"
         muted
-        playsinline 
+        playsinline
         class="w-full h-full object-cover z-0 no-zoom"
       >
         <source src="./assets/images/theme.mp4" type="video/mp4" />
@@ -52,12 +52,18 @@
       />
 
       <!-- Social media button -->
+
+      <div id="demo-modal" class="modal">
+        <div class="modal__content">
+          <img src="./assets/images/infortext.png" />
+
+          <a href="#" class="modal__close">&times;</a>
+        </div>
+      </div>
+
       <div class="w-full h-full lg:grid lg:grid-cols-3 lg:grid-rows-3">
         <div class="lg:col-start-1 lg:row-start-1 lg:row-span-1">
-          <a
-            target="_blank"
-            class="cursor-pointer z-20 relative"
-          >
+          <a href="#demo-modal" class="cursor-pointer z-20 relative">
             <img
               src="./assets/images/infor button.png"
               alt=""
