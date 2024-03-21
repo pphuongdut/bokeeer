@@ -9,6 +9,7 @@
   box-sizing: border-box;
   font-family: "ArtifaktElement", sans-serif;
   scroll-behavior: smooth;
+  touch-action: manipulation;
 }
 
 video::-webkit-media-controls {
