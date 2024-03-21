@@ -20,6 +20,9 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+.section-container {
+  background: url('../images/theme.mp4');
+}
 /* Button animation */
 
 .box {
