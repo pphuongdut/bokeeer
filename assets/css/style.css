@@ -19,6 +19,12 @@ video {
   pointer-events: none;
 }
 
+.no-zoom {
+  max-width: 100%; /* Prevent the video from exceeding its container's width */
+  max-height: 100%; /* Prevent the video from exceeding its container's height */
+  object-fit: cover; /* Ensure the video covers the entire container without distortion */
+}
+
 /* Hide scroll bar for all elements */
 ::-webkit-scrollbar {
   display: none;
