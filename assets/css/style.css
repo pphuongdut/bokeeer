@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Vampire";
+  src: url("../fonts/vampire_wars/Vampire\ Wars.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ArtifaktElement", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Hide scroll bar for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Button animation */
+
+.box {
+  background-color: #1a2857;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #1a2857;
+  transition: all ease-in-out 0.3s;
+}
+
+.box span {
+  display: block;
+  position: relative;
+}
+
+.box:hover {
+  color: #1a2857;
+}
+
+.box:hover em {
+  transform: rotate(-8deg) translateY(-81%);
+  transform-origin: left top;
+}
+
+.box em {
+  position: absolute;
+  width: 12em;
+  height: 6em;
+  background-color: white;
+  left: 0;
+  top: 3.8em;
+  transition: all 0.8s cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+.box em i {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 2em;
+  height: 1em;
+  margin-top: -0.5em;
+}
+
+.box em i:after,
+.box em i:before {
+  content: "";
+  float: left;
+  height: 100%;
+  width: 50%;
+  border-radius: 50%;
+}
+
+.box em i:before {
+  background-color: white;
+}
+
+.box em i:after {
+  background-color: #1a2857;
+}
+
+.click-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a2857;
+  transition: all 0.35s;
+}
+
+.btn-style501 {
+  background-image: linear-gradient(
+    to right,
+    #204b92 0%,
+    #144e69 51%,
+    #3667b4 100%
+  );
+  background-size: 200% auto;
+  background-position: left top;
+  border-color: transparent;
+  color: white;
+}
+
+.btn-style501:hover {
+  background-position: right bottom;
+}
