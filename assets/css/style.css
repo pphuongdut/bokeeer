@@ -11,6 +11,14 @@
   scroll-behavior: smooth;
 }
 
+video::-webkit-media-controls {
+  display: none;
+}
+
+video {
+  pointer-events: none;
+}
+
 /* Hide scroll bar for all elements */
 ::-webkit-scrollbar {
   display: none;
@@ -21,8 +29,9 @@ body::-webkit-scrollbar {
 }
 
 .section-container {
-  background: url('../images/theme.mp4');
+  background: url("../images/theme.mp4");
 }
+
 /* Button animation */
 
 .box {
